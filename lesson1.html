@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Example</title>
+
+    <!-- O modo mais simples de instalar Bootstrap é usar um CDN (content delivery network). -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Começar o link com um protocolo "//" é útil para fazer o navegador requisitar os arquivos com o protocolo que a página requisitante está usando.
+    Se voce serve seu conteúdo seguramente sobre HTTPS, porém tenta obter conteúdo remoto sobre HTTP, seu navegador provavelmente negará a mostrá-lo, por questões de segurança.
+    No exemplo será utilizado o protocolo completo https, porque nos exemplos estaremos usando o protocolo de arquivo (executados no sistema), e isto não funcionaria. Porém em produção poderia ser utilizado //, esta é a melhor maneira de garantir que o protocolo mude de acordo com o protocolo da sua página. -->
+
+    <!-- URL relativas ao protocolo
+
+    * Comece com "//" em vez de "http" ou "https"
+    * Dessa forma herdará o protocolo da página que está requisitando o recurso
+    * Prevenirá o browser de bloquear conteúdo de protocolos misturados
+    * CDN tem suporte a https
+    * Somente funcionará se você não está navegando a partir do sistema de arquivos -->
+
+    <!-- O tema do bootstrap é opcional, utilizamos se quisermos utilizar o tema padrão, podemos utilizar outros temas disponíveis ou criarmos o nosso próprio -->
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- Em produção sempre use a versão minificada dos arquivos fontes -->
+
+    <!-- Podemos adicionar nossas próprias classes CSS, logo após os arquivos do Bootstrap, para definir nossos proprios estilos ou sobrescrever partes do Bootstrap. Não é recomendável editar os arquivos do Bootstrap, por torna mais difícil ou quase impossível fazer upgrade. -->
+
+    <!-- Usamos HTML5Shiv e Respond.js para incluir os usuários do IE 8, permitindo usar a maioria das funionalidades do Bootstrap -->
+    <!--[if lt IE 9]>
+
+    <![endif]-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!-- Respond.js não funciona fora do servidor. Se você tentar visualizá-lo a partir do sistema de arquivos, ele não funcionará apropriadamente. Para testar em IE 8 será necessário enviar ao servidor e testá-lo a partir de lá. -->
+
+
+
+</head>
+
+<body>
+
+    <button class="btn btn-success">Success</button>
+
+    <!-- Não use o a versão 2, pois quebrará a compatibilidade com o IE8. Só é necessário se for utilizar alguma função, mas evita dor de cabeça já deixar incluido e geralmente já vai estar no cache -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            alert("Ready!");
+        });
+    </script>
+
+</body>
+
+</html>
