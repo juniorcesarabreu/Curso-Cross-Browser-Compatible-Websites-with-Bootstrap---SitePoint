@@ -47,7 +47,65 @@
 
 <body>
 
-    <button class="btn btn-success">Success</button>
+    <div class="container">
+
+        <!-- Existe para criar um conjunto de 12 colunas, não sendo meramente um atributo estilistico, mas ,mais importante, ele é um atributo semantico, dizendo ao seu documento que este é um novo conjunto de colunas e deve ser tratado independentemente do conjunto anterior  -->
+        <div class="row">
+
+            <!-- Apesar de podermos usar 12 colunas, não são necessariamente 12 colunas -->
+            <!-- md = breakpoint medium -->
+            <div class="col-md-8">
+                <h1>My Great Site</h1>
+            </div>
+            <div class="col-md-4">
+                Nav goes here
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- offset permite deslocar o conjunto inteiro de colunas para o lado -->
+            <div class="col-lg-1 col-md-2 col-md-offset-1">
+                Col 1
+            </div>
+            <div class="col-lg-1 col-md-2">
+                Col 2
+            </div>
+            <div class="col-lg-1 col-md-2">
+                Col 3
+            </div>
+            <div class="col-lg-1 col-md-2">
+                Col 4
+            </div>
+            <div class="col-lg-1 col-md-2">
+                Col 5
+            </div>
+            <div class="col-lg-1 col-md-2">
+                Col 6
+            </div>
+            <!-- push empurra para a direira, o numero no final indica quantas posições, 0 desativa -->
+            <div class="col-lg-1 col-md-2 col-lg-push-0 col-md-push-2">
+                Col 7
+            </div>
+            <!-- pull puxa para a esquerda -->
+            <div class="col-lg-1 col-md-2 col-lg-pull-0 col-md-pull-2">
+                Col 8
+            </div>
+            <div class="col-lg-1 col-md-2">
+                Col 9
+            </div>
+            <div class="col-lg-1 col-md-2">
+                Col 10
+            </div>
+            <div class="col-lg-1 col-md-2">
+
+            </div>
+            <div class="col-lg-1 col-md-2">
+
+            </div>
+
+        </div>
+    </div>
 
     <!-- Não use o a versão 2, pois quebrará a compatibilidade com o IE8. Só é necessário se for utilizar alguma função, mas evita dor de cabeça já deixar incluido e geralmente já vai estar no cache -->
     <!-- jQuery -->
@@ -57,7 +115,7 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-            alert("Ready!");
+
         });
     </script>
 
