@@ -1,0 +1,8 @@
+.cover-image {
+    height: 280px;
+    background-image: url(../images/shuttle_thin.png);
+}
+
+.footer {
+    text-align: center;
+}
