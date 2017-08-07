@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Example</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/gridstyles.css">
+
+</head>
+
+<body>
+
+    <!-- As classes podem ser sobrescritas se for necessário em um arquivo CSS a parte, mas nunca deveria editar o arquivo CSS do Bootstrap -->
+
+    <!-- tabelas em Bootstrap ocupam 100% do container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+
+                <!-- table padding padrão: 8px; -->
+                <table class="table table-striped table-bordered table-hover table-condensed table-responsive">
+                    <!-- table-striped alterna linhas sombreadas. Não funciona em IE8 -->
+                    <!-- table-bordered dá uma borda cinza ao redo de todas as células -->
+                    <!-- table-hover permite destacar a linha sobre a qual está o mouse -->
+                    <!-- table-condensed reduz o padding das células, reduz de 8px para 5px -->
+                    <!-- table-responsive adiciona o scroll horizontal em dispositivos menores (<768px) -->
+                    <!-- Se você estiver usando tabelas responsivas, você precisará adicionar este codigo dentro de um CSS para fazer Firefox renderizar apropriadamente, ele corrige um erro do Firefox:
+        @-moz-document url-prefix() {
+            fieldset { display: table-cell; }
+        } -->
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Column 4</th>
+                    </tr>
+                    <!-- active aplica a cor de hover na linha -->
+                    <tr class="active">
+                        <td>Row 1.1</td>
+                        <td>Row 1.2</td>
+                        <td>Row 1.3</td>
+                        <td>Row 1.4</td>
+                    </tr>
+                    <!-- danger fará a linha vermelha, sugerindo uma ação negativa -->
+                    <tr class="danger">
+                        <td>Row 2.1</td>
+                        <td>Row 2.2</td>
+                        <td>Row 2.3</td>
+                        <td>Row 2.4</td>
+                    </tr>
+                    <!-- warning fará a linha amarela -->
+                    <tr class="warning">
+                        <td>Row 3.1</td>
+                        <td>Row 3.2</td>
+                        <td>Row 3.3</td>
+                        <td>Row 3.4</td>
+                    </tr>
+                    <!-- success fará a linha verde -->
+                    <tr class="success">
+                        <td>Row 3.1</td>
+                        <td>Row 3.2</td>
+                        <td>Row 3.3</td>
+                        <td>Row 3.4</td>
+                    </tr>
+                    <!-- info fará a linha azul, para mostrar algo que precise ser visto -->
+                    <tr class="info">
+                        <td>Row 3.1</td>
+                        <td>Row 3.2</td>
+                        <td>Row 3.3</td>
+                        <td>Row 3.4</td>
+                    </tr>
+                    <tr>
+                        <td>Row 3.1</td>
+                        <td>Row 3.2</td>
+                        <td>Row 3.3</td>
+                        <td>Row 3.4</td>
+                    </tr>
+                    <tr>
+                        <td>Row 3.1</td>
+                        <td>Row 3.2</td>
+                        <td>Row 3.3</td>
+                        <td>Row 3.4</td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+        });
+    </script>
+
+</body>
+
+</html>
