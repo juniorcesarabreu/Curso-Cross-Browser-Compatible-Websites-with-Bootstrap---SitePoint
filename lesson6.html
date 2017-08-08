@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Example</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/gridstyles.css">
+
+</head>
+
+<body>
+
+    <!-- form em Bootstrap ocupam 100% da largura do container, se não houver nenhuma div, será ocupada toda a largura do documento -->
+    <form>
+        <!-- Ao usar o label com a id, o Bootstrap vê o label e o elemento de form como uma unidade e irá espaçá-los junto otimamente de acordo com o seu padrão -->
+        <label for="username">Your username: </label>
+
+        <div class="input-group input-group-lg">
+            <!-- adiciona um icone antes do input, é necessário estar dentro de uma div input-group -->
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" id="username">
+            <span class="input-group-addon">.00</span>
+        </div>
+        <!-- Pode usar uma classe de parágrafo para exibir um bloco de ajuda, em texto cinza -->
+        <p class="help-block">Be sure to enter the right name.</p>
+
+        <div class="input-group input-group-sm">
+            <span class="input-group-addon"><input type="checkbox"></span>
+            <input type="text" class="form-control" id="username">
+        </div>
+
+        <div class="input-group input-group-sm">
+            <span class="input-group-btn">
+                <button class="btn btn-default">Submit!</button>
+            </span>
+
+        </div>
+
+        <button type="button">Submit</button>
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- Com form-inline cada componente vai deslizar para o lado do outro em viewports maiores que 768px -->
+    <form class="form-inline">
+
+        <div class="form-group">
+            <label for="username">Your username: </label>
+            <input type="text" id="username" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email Address: </label>
+            <input type="text" id="email" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="city">Your City: </label>
+            <input type="text" id="city" class="form-control" disabled>
+            <!-- O input com a classe form-control quando tiver o atributo disabled receberá um estilo do Bootstrap -->
+        </div>
+
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- form-horizontal usa a mesma técnica do grid do bootstrap, os form group funcionaram como linhas do grid, basta adicionar as classes de coluna -->
+    <form class="form-horizontal">
+
+        <!-- Para disabilitar o form-group inteiro, basta envolver com fieldset, isto permite disabiltar vários ao mesmo tempo -->
+        <fieldset disabled>
+
+            <div class="form-group">
+                <label for="username" class="col-sm-2">Your username: </label>
+                <div class="col-sm-10">
+                    <input type="text" id="username" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="username" class="col-sm-2">Your username: </label>
+                <div class="col-sm-10">
+                    <input type="text" id="username" class="form-control">
+                </div>
+            </div>
+
+        </fieldset>
+
+        <div class="form-group">
+            <label for="email" class="col-sm-2">Your Email Address: </label>
+            <div class="col-sm-10">
+                <!-- utilizando o elemento p com a classe form-control-example permite exibir texto plano com a mesma formatação dos elementos de form em form horizontal, para propósitos de layout -->
+                <p class="form-control-static">example@email</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="city" class="col-sm-2">Your City: </label>
+            <div class="col-sm-10">
+                <input type="text" id="city" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="city" class="col-sm-2">Your City: </label>
+            <div class="col-sm-10">
+                <input type="text" id="city" class="form-control" readonly>
+                <!-- readonly é implementado de maneira semelhante ao disabled -->
+            </div>
+        </div>
+
+    </form>
+
+    <br>
+    <hr><br>
+
+    <form>
+
+        <!-- Com radio-inline ou checkbox-inline coloca os elemento lado a lado -->
+        <label class="radio-inline">
+            <input type="radio" name="radioYesNo" id="radio1" value="yes">Yes
+        </label>
+
+        <label class="radio-inline">
+            <input type="radio" name="radioYesNo" id="radio1" value="no">No
+        </label>
+
+        <label class="radio-inline">
+            <input type="radio" name="radioYesNo" id="radio1" value="maybe">Maybe
+        </label>
+
+
+    </form>
+
+
+    <br>
+    <hr><br>
+
+    <form>
+
+        <!-- É possivel adicionar ícones como feedback -->
+        <div class="form-group has-feedback">
+            <label for="username">Your username: </label>
+            <span class="glyphicon glyphicon-ok"></span>
+            <input type="text" id="username" class="form-control">
+        </div>
+
+        <div class="form-group has-feedback">
+            <label for="email">Your Email Address: </label>
+            <span class="glyphicon glyphicon-warning-sign"></span>
+            <input type="text" id="email" class="form-control">
+        </div>
+
+        <div class="form-group has-feedback">
+            <label for="city">Your City: </label>
+            <span class="glyphicon glyphicon-remove"></span>
+            <input type="text" id="city" class="form-control">
+        </div>
+
+    </form>
+
+    <br><hr><br>
+
+    <form>
+
+        <!-- É possivel adicionar ícones como feedback -->
+        <div class="form-group">
+            <label for="username">Your username: </label>
+            <input type="text" id="username" class="form-control input-lg">
+            <!-- input-lg define o tamanho do input como grande, input-sm para pequeno -->
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email Address: </label>
+            <input type="text" id="email" class="form-control input-sm">
+        </div>
+
+        <div class="form-group">
+            <label for="city">Your City: </label>
+            <input type="text" id="city" class="form-control">
+        </div>
+
+
+    </form>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+        });
+    </script>
+
+</body>
+
+</html>
