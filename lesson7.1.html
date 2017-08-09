@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Example</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/gridstyles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-2">
+
+                <!-- data-togle diz ao Bootstrap qual o componente que estamos utilizando -->
+                <!-- data-target diz o alvo, é usado para anexar este botão ao modal com este id, colocamos # porque é um id -->
+                <button class="btn btn-success" data-toggle="modal" data-target="#helloWorld">Hello</button>
+
+                <!-- Div que contém o modal; a classe modal define que vai ser um modal, fade define o tipo de efeito -->
+                <div id="helloWorld" class="modal fade">
+
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <!-- Pode ser colocado qualquer coisa dentro do modal, pois utilizar apenas para exibir um parágrafo seri uma péssima escolha de UI -->
+                                <p>Hello World!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-2">
+
+                <button class="btn btn-success" data-toggle="modal" data-target="#helloWorld2">Hello</button>
+
+                <div id="helloWorld2" class="modal fade">
+
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+
+                            <!-- Podemos adicionar um header ao modal -->
+                            <div class="modal-header">
+                                <h4>Here's my header</h4>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p>Hello World!</p>
+                            </div>
+
+                            <div class="modal-footer">
+
+                                <p><small>Here's my footer</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+        });
+    </script>
+
+</body>
+
+</html>
